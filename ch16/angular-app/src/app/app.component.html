@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<mat-sidenav-container class="full-height-container">
+    <mat-sidenav #sidenav mode="over" class="content-padding" [fixedInViewport]="true" [fixedTopGap]="60"
+        [fixedBottomGap]="0" [opened]="false">
+        <app-login></app-login>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content-padding">
+
+            <div [hidden]="hideProducts" class="split left">
+                <h2>Product List</h2>
+                <div id="root"></div>
+            </div>
+
+            <div [hidden]="hideShoppingCartRegion" class="{{shoppingCartStyles}}">
+                <h2>Shopping Cart</h2>
+                <p *ngIf="hideShoppingCart">
+                    Please login to view your shopping cart
+                </p>
+                <div [hidden]="hideShoppingCart" id="vue-application"></div>
+            </div>
+            <div [hidden]="hideOrderPlaced" class="split left">
+                <h2>Order Placed</h2>
+                <p>&nbsp;</p>
+                <p>Thank you, {{username}}.</p>
+                <p>Your order has been placed.</p>
+                <p>- The Switch Sales team.</p>
+            </div>
+
+        </div>
+
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<router-outlet></router-outlet>

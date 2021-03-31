@@ -1,0 +1,19 @@
+<div class="login-container">
+    <div *ngIf="loginForm">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <mat-form-field appearance="fill">
+                <mat-label>Username</mat-label>
+                <input matInput formControlName="username">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="password">
+            </mat-form-field>
+            <br>
+            <button id="submit_button" mat-button color="primary" type="submit" [disabled]="!isFormValid()">
+                Login
+            </button>
+        </form>
+    </div>
+</div>

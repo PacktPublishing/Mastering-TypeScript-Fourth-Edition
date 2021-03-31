@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+  </head>
+  <body>
+   <script src="MicroEventBus.js"></script>
+
+   <script>
+       console.log('running script');
+       testBroadcast();
+       function testBroadcast() {
+           console.log('subscribing');
+           window.microEventBus.on('test-event').subscribe(function (event){
+               console.log('IDX : testBroadcast got : ' + event)
+           });
+       }
+
+       function sendMessage() {
+           window.microEventBus.broadcast('test-event', 'test message');
+       }
+   </script>
+   <button onclick="sendMessage()">Click me</button>
+  </body>
+</html>

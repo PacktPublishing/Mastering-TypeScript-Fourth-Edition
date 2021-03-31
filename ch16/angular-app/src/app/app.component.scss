@@ -1,0 +1,55 @@
+.full-height-container {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    color: black;
+  }
+  
+  .content-padding {
+    padding: 20px;
+  }
+
+  mat-sidenav {
+    width: 60%;
+  }
+
+  .container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .left-half {
+    flex-grow: 4;
+  }
+  
+  .right-half {
+    flex: 2;
+  }
+
+  .split {
+    height: 100%;
+    width: 65%;
+    position: fixed;
+    z-index: 1;
+    top: 50;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    padding-left: 20px;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    width: 35%;
+    padding-left:20px;
+    background-color: white;
+  }

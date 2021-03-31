@@ -1,0 +1,24 @@
+{
+    "name": "micro-event-bus",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/MicroEventBus.js",
+    "types": "dist/MicroEventBus.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "rollup": "^2.41.4",
+        "rollup-plugin-dts": "^3.0.1",
+        "rxjs": "^6.6.6",
+        "typescript": "^4.2.3"
+    },
+    "devDependencies": {
+        "copy-webpack-plugin": "^8.0.0",
+        "dts-webpack-bundler": "^1.0.3",
+        "webpack": "^5.24.2",
+        "webpack-cli": "^4.5.0"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "extends": "../tsconfig",
+    "compilerOptions": {
+        /* Strict Type-Checking Options */
+        "outDir": "../dist",
+        "allowJs": true,
+        "strict": false
+    }
+}

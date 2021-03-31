@@ -1,0 +1,16 @@
+.large-image {
+    /* width: 400px; */
+    height: 400px;
+    background-size: contain !important;
+    /* padding-top: 90px; */
+    margin: 30px;
+}
+
+.details-paper-padding-top {
+    margin-top: 90px;
+}
+
+.details-paper-body {
+    margin-left: 50px;
+    margin-right: 50px;
+}

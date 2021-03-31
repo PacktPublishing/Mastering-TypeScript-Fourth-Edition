@@ -1,0 +1,13 @@
+<span *ngIf="isLoggedIn" class="username-span">{{loggedInUserName}}</span>
+
+<button *ngIf="isLoggedIn" mat-icon-button color="white">
+    <mat-icon>shopping_cart</mat-icon>
+</button>
+
+<button *ngIf="isLoggedIn" mat-icon-button color="white" (click)="onLogoutClicked()">
+    <mat-icon>logout</mat-icon>
+</button>
+
+<button *ngIf="!isLoggedIn" mat-icon-button color="white" (click)="onLoginClicked()">
+    <mat-icon>login</mat-icon>
+</button>

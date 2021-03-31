@@ -1,0 +1,9 @@
+{
+    "extends": "../tsconfig",
+    "compilerOptions": {
+        /* Strict Type-Checking Options */
+        "strict": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    }
+}

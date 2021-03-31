@@ -1,0 +1,17 @@
+{
+    "name": "ch01",
+    "version": "1.0.0",
+    "description": "",
+    "main": "hello_typescript.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "inquirer": "^7.1.0"
+    },
+    "devDependencies": {
+        "@types/inquirer": "^6.5.0"
+    }
+}
