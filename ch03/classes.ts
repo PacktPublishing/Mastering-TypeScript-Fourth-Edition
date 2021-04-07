@@ -81,8 +81,8 @@ publicAccess.id = 10;
 
 class ClassWithPrivateProperty {
     private id: number;
-    constructor(_id: number) {
-        this.id = _id;
+    constructor(id: number) {
+        this.id = id;
     }
 }
 
@@ -99,8 +99,8 @@ privateAccess["id"] = 20;
 
 // class ClassES6Private {
 //     #id: number;
-//     constructor(_id: number) {
-//         this.#id = _id;
+//     constructor(id: number) {
+//         this.#id = id;
 //     }
 // }
 
@@ -126,11 +126,11 @@ console.log(`myClassMod.id = ${myClassMod.id}`);
 
 class ClassWithReadonly {
     readonly name: string = "test";
-    constructor(_name: string) {
-        this.name = _name;
+    constructor(name: string) {
+        this.name = name;
     }
-    // setNameValue(_name: string) {
-    //     this.name = _name;
+    // setNameValue(name: string) {
+    //     this.name = name;
     // }
 }
 
@@ -215,8 +215,8 @@ interface IBaseInterfaceClassExt
 
 class ImplementsExt extends BaseInterfaceClass
     implements IBaseInterfaceClassExt {
-    setId(_id: number): void {
-        this.id = _id;
+    setId(id: number): void {
+        this.id = id;
     }
 }
 

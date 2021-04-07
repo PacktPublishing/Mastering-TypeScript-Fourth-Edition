@@ -106,6 +106,6 @@ inquirer.prompt(
             message: "what is your name ?"
         }
     ]
-).then((answers) => {
+).then(answers => {
     console.log(`you answered : ${answers.first_name}`);
 })

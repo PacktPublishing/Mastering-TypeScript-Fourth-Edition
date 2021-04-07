@@ -129,7 +129,7 @@ function promiseReturningString(throwError: boolean)
     )
 }
 
-console.log(`1. calling promiseReturnString`)
+console.log(`1. calling promiseReturningString`)
 
 promiseReturningString(false)
     .then((returnValue) => {
@@ -138,7 +138,7 @@ promiseReturningString(false)
         console.log(`this is not called`);
     });
 
-console.log(`1. calling promiseReturnString (force error)`)
+console.log(`1. calling promiseReturningString (force error)`)
 
 promiseReturningString(true)
     .then((returnValue: string) => {

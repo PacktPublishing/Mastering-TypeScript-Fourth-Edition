@@ -125,14 +125,14 @@ derivedCallthrough.print("text");
 class BaseClassProtected {
     protected id: number;
     private name: string = "";
-    constructor(_id: number) {
-        this.id = _id;
+    constructor(id: number) {
+        this.id = id;
     }
 }
 
 class AccessProtected extends BaseClassProtected {
-    constructor(_id: number) {
-        super(_id);
+    constructor(id: number) {
+        super(id);
         console.log(`base.id = ${this.id}`);
         // console.log(`base.name = ${this.name}`);
     }
@@ -152,9 +152,9 @@ abstract class EmployeeBase {
     public id: number;
     public name: string;
     abstract doWork(): void;
-    constructor(_id: number, _name: string) {
-        this.id = _id;
-        this.name = _name;
+    constructor(id: number, name: string) {
+        this.id = id;
+        this.name = name;
     }
 }
 // class OfficeWorker extends EmployeeBase {
