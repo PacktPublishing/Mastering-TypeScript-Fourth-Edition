@@ -132,7 +132,7 @@ function promiseReturningString(throwError: boolean)
 console.log(`1. calling promiseReturningString`)
 
 promiseReturningString(false)
-    .then((returnValue) => {
+    .then((returnValue: string) => {
         console.log(`2. returnedValue : ${returnValue}`);
     }).catch((errorCode: number) => {
         console.log(`this is not called`);

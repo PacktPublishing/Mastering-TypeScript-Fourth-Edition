@@ -40,7 +40,7 @@ function classDecorator(
 
 function propertyDecorator(
     target: any,
-    propertyName: string) { }
+    propertyKey: string) { }
 
 function methodDecorator(
     target: any,

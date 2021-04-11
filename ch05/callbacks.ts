@@ -8,7 +8,7 @@ function delayedResponseWithCallback(callback: () => void) {
         callback();
     }
     console.log(`2. calling setTimeout`)
-    setTimeout((executeAfterTimeout), 1000);
+    setTimeout(executeAfterTimeout, 1000);
     console.log(`3. after calling setTimeout`)
 }
 
