@@ -25,21 +25,21 @@ const twoStrings: Observable<string[]> = onePerSecond.pipe(
 );
 
 forkJoin(
-    threeNumbers,
-    twoStrings
+    [threeNumbers,
+        twoStrings]
 ).subscribe((values) => {
     console.log(`<< threeNumbers returned : ${values[0]}`);
-    console.log(`<< twoStrings returned : ${values[2]}`);
+    console.log(`<< twoStrings returned : ${values[1]}`);
 });
 
 // // // named output forkjoin
-// forkJoin(
-//     [threeNumbers,
-//         twoStrings]
-// ).subscribe((
-//     [threeNumbersOutput, twoStringsOutput]
-// ) => {
-//     console.log(`<< threeNumbersOutput : ${threeNumbersOutput}`);
-//     console.log(`<< twoStringsOutput : ${twoStringsOutput}`);
-// });
+forkJoin(
+    [threeNumbers,
+        twoStrings]
+).subscribe((
+    [threeNumbersOutput, twoStringsOutput]
+) => {
+    console.log(`<< threeNumbersOutput : ${threeNumbersOutput}`);
+    console.log(`<< twoStringsOutput : ${twoStringsOutput}`);
+});
 

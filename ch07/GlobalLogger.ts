@@ -1,7 +1,7 @@
 class GlobalLogger {
     public static logGlobalsToConsole() {
         for (let email of CONTACT_EMAIL_ARRAY) {
-            console.log(`found contact : ${email}`)
+            console.log(`found contact : ${email}`);
         }
     }
 }
@@ -19,7 +19,7 @@ var failureMessage = {
         "failure": true,
         "errorMessage": "Message From failureMessage"
     }
-}
+};
 
 if (ErrorHelper.containsErrors(failureMessage))
     ErrorHelper.trace(failureMessage);
@@ -29,7 +29,7 @@ var failureMessageString = {
         "failure": "true",
         "errorMessage": "Message from failureMessageString"
     }
-}
+};
 
 if (ErrorHelper.containsErrors(failureMessageString))
     ErrorHelper.trace(failureMessageString);
@@ -38,7 +38,7 @@ var successMessage = {
     responseText: {
         "failure": false
     }
-}
+};
 
 if (!ErrorHelper.containsErrors(successMessage))
     ErrorHelper.trace("success");

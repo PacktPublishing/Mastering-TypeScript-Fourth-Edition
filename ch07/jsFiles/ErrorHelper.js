@@ -6,7 +6,7 @@ var ErrorHelper = (function () {
 
             var errorValue = response.responseText;
 
-            if (String(errorValue.failure) == "true"
+            if (String(errorValue.failure) === "true"
                 || Boolean(errorValue.failure)) {
                 return true;
             }
@@ -28,20 +28,20 @@ var failureMessage = {
         "failure": true,
         "errorMessage": "Message From failureMessage"
     }
-}
+};
 
 var failureMessageString = {
     responseText: {
         "failure": "true",
         "errorMessage": "Message from failureMessageString"
     }
-}
+};
 
 var successMessage = {
     responseText: {
         "failure": false
     }
-}
+};
 
 if (ErrorHelper.containsErrors(failureMessage))
     ErrorHelper.trace(failureMessage);
