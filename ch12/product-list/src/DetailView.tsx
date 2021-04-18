@@ -146,7 +146,7 @@ export class DetailView extends React.Component<IDetailsProps, IDetailsState> {
     }
 
     onSubmit(e: React.FormEvent) {
-        console.log(`submit ; ${this.state.noSwitches}`);
+        console.log(`submit : ${this.state.noSwitches}`);
         e.preventDefault();
     }
 }

@@ -24,7 +24,7 @@ export const getHandler = async (
                 dynamoDbClient,
                 getProductScanParameters()
             );
-        let outputArray = []
+        let outputArray = [];
 
         if (scanResults?.Items) {
             for (let item of scanResults.Items) {

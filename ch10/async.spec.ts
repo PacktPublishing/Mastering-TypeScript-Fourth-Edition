@@ -38,7 +38,7 @@ describe("async test with done ", () => {
     });
 
     it("should return value after 1 second", () => {
-        console.log(`3. checkng returnedValue`);
+        console.log(`3. checking returnedValue`);
         expect(returnedValue).toEqual("completed");
     })
 });
