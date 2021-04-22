@@ -10,7 +10,7 @@ interface IFailureMessage {
 }
 
 declare module ErrorHelper {
-    function containsErrors(reponse: IResponse): boolean;
+    function containsErrors(response: IResponse): boolean;
     function trace(message: IResponse | string): void;
 }
 
